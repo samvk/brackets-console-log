@@ -24,7 +24,7 @@ define(function (require, exports, module) {
     }
     var newPos = {line: pos.line, ch: line.length + 1};
 
-    currentDoc.replaceRange('\nconsole.log(\'' + selectedText + '\', ' + selectedText + ');', newPos);
+    currentDoc.replaceRange('\nconsole.log(\'' + selectedText + ':\', ' + selectedText + ');', newPos);
     doc.indentLine(newPos.line + 1, 'smart');
   };
 
