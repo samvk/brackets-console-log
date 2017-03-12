@@ -32,7 +32,7 @@ define(function (require, exports, module) {
   CommandManager.register('Console Log', MY_COMMAND_ID, addSomeText);
 
   var menu = Menus.getMenu(Menus.AppMenuBar.EDIT_MENU);
-  menu.addMenuItem(MY_COMMAND_ID, 'Ctrl-Alt-Q');
+  menu.addMenuItem(MY_COMMAND_ID, 'Ctrl-Shift-V');
 
   var contextMenu = Menus.getContextMenu(Menus.ContextMenuIds.EDITOR_MENU);
   contextMenu.addMenuItem(MY_COMMAND_ID);
